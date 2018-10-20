@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Foundation
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -27,6 +30,16 @@ class ViewController: UIViewController {
         print(sender.currentTitle!) // change text
         print(textInput.text!) // any text that I introduced in the input text
         mylabel.text = textInput.text!
+        
+        
+        Alamofire.request("http://foaas.com/ing/" + textInput.text! + "/from",  headers: ["Accept": "application/json"]).responseJSON { response in
+            print(response.result)
+            if let result = response.result.value {
+                let json = JSON(result)
+                var message = json["message"].stringValue
+                self.mylabel.text = message
+            }
+        }
     }
 }
 

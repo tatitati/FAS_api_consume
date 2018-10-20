@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B12FB34217B248400125095 /* MyDeps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B12FB28217B246400125095 /* MyDeps.framework */; };
 		5B2A67FC217A94B7002E7818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A67FB217A94B7002E7818 /* AppDelegate.swift */; };
 		5B2A67FE217A94B7002E7818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A67FD217A94B7002E7818 /* ViewController.swift */; };
 		5B2A6801217A94B7002E7818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A67FF217A94B7002E7818 /* Main.storyboard */; };
@@ -14,7 +15,39 @@
 		5B2A6806217A94B7002E7818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A6804217A94B7002E7818 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B12FB25217B246400125095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B12FB1A217B246300125095 /* MyDeps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "MyDeps::MyDepsTests::Product";
+			remoteInfo = MyDepsTests;
+		};
+		5B12FB27217B246400125095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B12FB1A217B246300125095 /* MyDeps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "MyDeps::MyDeps::Product";
+			remoteInfo = MyDeps;
+		};
+		5B12FB29217B246400125095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B12FB1A217B246300125095 /* MyDeps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON::Product";
+			remoteInfo = SwiftyJSON;
+		};
+		5B12FB2B217B246400125095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B12FB1A217B246300125095 /* MyDeps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Alamofire::Alamofire::Product";
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5B12FB1A217B246300125095 /* MyDeps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyDeps.xcodeproj; path = MyDeps/MyDeps.xcodeproj; sourceTree = "<group>"; };
 		5B2A67F8217A94B7002E7818 /* experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2A67FB217A94B7002E7818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B2A67FD217A94B7002E7818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +62,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B12FB34217B248400125095 /* MyDeps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B12FB1B217B246300125095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B12FB26217B246400125095 /* MyDepsTests.xctest */,
+				5B12FB28217B246400125095 /* MyDeps.framework */,
+				5B12FB2A217B246400125095 /* SwiftyJSON.framework */,
+				5B12FB2C217B246400125095 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B12FB33217B248400125095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B2A67EF217A94B7002E7818 = {
 			isa = PBXGroup;
 			children = (
+				5B12FB1A217B246300125095 /* MyDeps.xcodeproj */,
 				5B2A67FA217A94B7002E7818 /* experiment */,
 				5B2A67F9217A94B7002E7818 /* Products */,
+				5B12FB33217B248400125095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,12 +165,49 @@
 			mainGroup = 5B2A67EF217A94B7002E7818;
 			productRefGroup = 5B2A67F9217A94B7002E7818 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5B12FB1B217B246300125095 /* Products */;
+					ProjectRef = 5B12FB1A217B246300125095 /* MyDeps.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5B2A67F7217A94B7002E7818 /* experiment */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5B12FB26217B246400125095 /* MyDepsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = MyDepsTests.xctest;
+			remoteRef = 5B12FB25217B246400125095 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B12FB28217B246400125095 /* MyDeps.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyDeps.framework;
+			remoteRef = 5B12FB27217B246400125095 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B12FB2A217B246400125095 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 5B12FB29217B246400125095 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B12FB2C217B246400125095 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 5B12FB2B217B246400125095 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B2A67F6217A94B7002E7818 /* Resources */ = {
